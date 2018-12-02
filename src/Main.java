@@ -8,15 +8,23 @@ public class Main extends JFrame {
         new Main();
     }
 
+    final int WIDTH = 800;
+    final int HEIGHT = 600;
+
     public Main() {
         initWindow();
+        initMainPanel();
+    }
+
+    private void initMainPanel() {
+
     }
 
     private void initWindow() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Arcanoid");
         setResizable(false);
-        setPreferredSize(new Dimension(800, 600));
+        setPreferredSize(new Dimension(WIDTH, HEIGHT));
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
